@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(./orange.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 50%;
+    height: 10%;
+    background-color: #eee;
+    border-radius: 13px;
+    position: fixed;
+    top: 66px;
+}
+
+.input{
+    margin: 22px;
+    width: 83%;
+    height: 3rem;
+    border: none;
+    margin-right: 20px;
+    font-size: 22px;
+    text-indent: 20px;
+    caret-color: orangered;
+    font-weight: 500;
+}
+
+
+.add{
+    width: 109px;
+    height: 58px;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+    border: none;
+    font-size: 20px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+
+.tasks{
+    width: 100%;
+    height: fit-content;
+    min-height: 87%;
+    background-color: #eee;
+    border-radius: 13px;
+    margin-top: 43px;
+    padding: 10px;
+}
+
+
+.girl img {
+    position: fixed;
+    bottom: 74px;
+    left: 32px;
+    width: 254px;
+    height: 297px;
+    animation: moveAnimation 2s infinite alternate-reverse;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100px); 
+    }
+}
